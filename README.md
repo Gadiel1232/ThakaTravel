@@ -195,3 +195,10 @@ con el desarrollo de ThakaTravel.
 ## Licencia
 
 Proyecto desarrollado con fines académicos.
+
+
+
+
+## Desarrollo
+
+Actualmente el proyecto se encuentra en etapa de planificación y desarrollo.
