@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #263238;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* contenedor principal */
+
+#root > div {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+/* encabezados */
+
+h1 {
+  margin: 0;
+  padding: 28px 20px;
+  background: #176b5b;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  margin: 35px auto 10px;
+  color: #176b5b;
+  font-size: 30px;
+  text-align: center;
+}
+
+#root > div > p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  padding: 0 20px;
+  color: #607d8b;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* tarjeta de destino */
+
+#root > div > div {
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* nombre del destino */
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #176b5b;
+  font-size: 25px;
+}
+
+/* información */
+
+#root > div > div p {
+  margin: 8px 0;
+  color: #546e7a;
+  line-height: 1.5;
+}
+
+/* botón */
+
+button {
+  margin-top: 18px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #176b5b;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0f5145;
+  transform: translateY(-1px);
+}
+
+/* separador */
+
+hr {
+  display: none;
+}
+
+/* mensaje de carga */
+
+#root > div > p:first-of-type {
+  line-height: 1.6;
+}
+
+/* adaptación para celulares */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    padding: 22px 15px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  #root > div > div {
+    width: 92%;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

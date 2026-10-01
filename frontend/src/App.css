@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #263238;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background: #087f6b;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  font-size: 40px;
+}
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 20px 60px;
+}
+
+h2 {
+  margin: 20px 0 10px;
+  color: #087f6b;
+  font-size: 30px;
+  text-align: center;
+}
+
+.descripcion {
+  margin: 0 auto 35px;
+  color: #607d8b;
+  font-size: 17px;
+  text-align: center;
+}
+
+.destinos {
+  width: 100%;
+}
+
+.destinos h2 {
+  margin-bottom: 25px;
+}
+
+.buscador {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto 25px;
+  padding: 14px 18px;
+  border: 1px solid #d5dfe3;
+  border-radius: 10px;
+  background: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.buscador:focus {
+  border-color: #087f6b;
+  box-shadow: 0 0 0 3px rgba(8, 127, 107, 0.1);
+}
+
+.destino {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto 25px;
+  padding: 28px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.destino h3 {
+  margin: 0 0 15px;
+  color: #087f6b;
+  font-size: 25px;
+}
+
+.destino p {
+  margin: 9px 0;
+  color: #546e7a;
+  line-height: 1.5;
+}
+
+.destino strong {
+  color: #37474f;
+}
+
+button {
+  margin-top: 18px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  background: #087f6b;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #056453;
+  transform: translateY(-1px);
+}
+
+.mi-ruta {
+  width: 100%;
+  max-width: 750px;
+  margin: 40px auto 0;
+  padding: 28px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.mi-ruta h2 {
+  margin-top: 0;
+}
+
+.mi-ruta > p {
+  text-align: center;
+  color: #607d8b;
+}
+
+.contador {
+  text-align: center;
+}
+
+.ruta-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.ruta-item span {
+  color: #37474f;
+  font-weight: bold;
+}
+
+.ruta-item button {
+  margin: 0;
+  background: #78909c;
+  padding: 8px 15px;
+}
+
+.ruta-item button:hover {
+  background: #546e7a;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid #087f6b;
+  color: #37474f;
+  font-size: 18px;
+}
+
+.total strong {
+  color: #087f6b;
+  font-size: 22px;
+}
+
+.mensaje {
+  text-align: center;
+  color: #607d8b;
+}
+
+.error {
+  width: 100%;
+  max-width: 750px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffebee;
+  color: #c62828;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+
+  main {
+    width: 100%;
+    padding: 25px 15px 50px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .descripcion {
+    font-size: 15px;
+  }
+
+  .destino,
+  .mi-ruta {
+    padding: 20px;
+  }
+
+  .destino h3 {
+    font-size: 22px;
+  }
+
+  .ruta-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ruta-item button {
+    width: 100%;
+  }
+
+  .total {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

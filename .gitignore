@@ -1,0 +1,27 @@
+# Entornos virtuales de Python
+venv/
+.venv/
+backend/venv/
+ciencia_datos/venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Django
+*.sqlite3
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Variables de entorno
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
